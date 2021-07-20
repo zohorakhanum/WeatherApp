@@ -1,0 +1,18 @@
+
+
+
+<div class="container">
+    
+        <h3 class="textCenter">{{cityName}} Data @ 9:00 Hours!</h3>
+        
+            <div class="row" >
+                  
+                <div class="offset-md-2 col-md-8 cityDiv row" *ngFor="let city of cityData">
+                <div class="col-md-6 col-sm-7 col-xs-12 pad12"> {{city.dt_txt|date}} </div>
+                <div class="col-md-6 col-sm-5 col-xs-12 pad12">
+                        {{city.main.temp}}<span [innerHtml]="'&#8451;'"></span><br>
+                        SeaLevel: {{city.main.sea_level}} m</div>
+                    </div>
+            </div>
+            <div class="btndiv" routerLink="/cityview"><button class="btn btn-primary">Back</button></div>
+        </div>

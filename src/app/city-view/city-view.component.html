@@ -1,0 +1,13 @@
+<div class="container">
+<h3 class="textCenter">{{title}}</h3>
+    <div class="row" >
+    <div class="row offset-md-2 col-lg-8 offset-lg-2 col-md-8 cityDiv" *ngFor="let city of cities" routerLink="/city/{{city.name}}">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad12">
+            <span class="font25">{{city.name}}</span> <br>{{city.main.temp}}
+            <span [innerHtml]="'&#8451;'"></span> </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad12">
+        Sunrise: {{city.sys.sunrise | date:'shortTime'}}
+        Sunset: {{city.sys.sunset | date:'shortTime'}}</div>
+    </div>
+    </div>
+</div>

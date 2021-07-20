@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body,html{
+    background-image: url('./assets/images/backgroungImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+.pad12{
+    padding:12px;
+}
+.textCenter{
+    text-align:center;
+}
+.cityDiv{
+    border-radius: 4px;
+    background-color: #e0e1e2;
+    margin-bottom: 30px;
+    
+
+}
+.font25{
+    font-size: 25px;
+}
